@@ -1,0 +1,313 @@
+/**
+ * 	CSS Stylesheet file for all the html pages
+ *  This CSS file will specify general style rules for our projects
+ *   
+ * 	Samsung Blue Hex Color: #0D3697 (rgb 13,54,151)
+ *  Author: Team Samsung SCTS
+ */
+
+html, body {
+	margin:		0 auto;
+	padding:	0px;
+	vertical-align: baseline;
+	font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+	/*background-color: rgb(242,242,242);*/
+	background: url(bg-light.jpg) repeat;
+}
+
+body {
+	min-width:	1020px;
+}
+
+div {
+	margin: 0 auto;
+}
+
+header {
+	margin: 0 auto;
+	min-width:	1020px;
+	z-index:	9999;
+}
+
+
+/*This is css style for nav bar*/
+	.nav-space {
+		width: 		100%;
+		height:		48px;
+		top: 		0px;
+		left:		0px;
+		/*background-color:	rgb(254,254,254);*/
+		border-bottom: 		rgb(128,128,128);
+		box-shadow: 	0px 2px 5px #888888;
+	}
+	
+	.fixed {
+		position: fixed;
+	}
+	
+	.topbar {
+		background: none;
+	}
+		#topbar-left {
+			margin-left: 20px;
+		}
+		#topbar-right {
+			margin-right: 5px;
+		}
+		
+	.columns {
+		min-width:	1020px;
+		height:		48px;
+		margin-left:	auto;
+		margin-right:	auto;
+		display:	block;
+	}
+	
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+	}
+
+/*
+ * .nav-space class is used by header of each page
+ */ 
+	.nav-wrapper {
+		width:		100%;
+		height:		48px;
+		left:		0;
+		top:		0;
+		position:	absolute;
+		opacity:		0.8;
+		/*background: url('../img/nav_bar/guide.png') top center repeat;*/
+		background-color: #FFFFFF;
+		z-index: -1;
+	}
+
+/*style for Samsung LOGO*/
+	.logo-icon {
+		margin-top: 8px;
+		height: 	32px;
+	}
+	
+/*style for the title e.g: electronic data capture*/
+	.nav-title {
+		margin-left:	10px;
+		line-height:	48px;		
+		font-size:		18px;
+		font-weight:	400;
+		
+		text-shadow:  2px 4px 5px #DFDFDF;
+	}
+	
+/*style for the right part of the nav bar, including username, configure, message, logout*/
+		.logout-icon {
+			margin-top: 0px;
+			opacity:	0.6;
+		}
+		.logout-icon:hover {
+			opacity: 1;
+		}
+		.logout-icon img {
+			height:	21px;
+		}		
+		
+		/* Import a font for icon display, display user icon, configure icon*/	
+		@font-face {
+    		font-family: 'Web Symbols';
+        	src: url('WebSymbols-Regular.otf') format('opentype');
+    		font-weight: normal;
+    		font-style: normal;
+     	}
+		.ca-icon{
+		    font-family: 'Web Symbols'; 
+		    font-size: 15px;
+		}
+		sup {
+			margin-left:	2px;
+			font-weight: 	bold;
+			font-size:		14px;
+			color:			#FF1A05;
+		}
+		
+/*CSS Style for the right side of the top nav bar*/
+	.topbar .nav {
+		height:	48px;
+		float:	left;
+	}
+	
+	.topbar-nav {
+		list-style: none;
+	}
+	
+	#topbar-right .nav > li {
+		height: 48px;
+  		float: left;
+	}
+
+	#topbar-right .nav > li > a {
+		height: 40px;
+		line-height: 40px;
+	    float: none;
+	    padding: 4px 15px 4px;  
+	    color: #777777;
+	    text-decoration: none;
+	    text-shadow: 0 1px 0 #ffffff;
+	}
+	
+	#topbar-right .nav .dropdown-toggle .caret {
+	  margin-top: 18px;
+	  border-top-color: #777777;
+	  border-bottom-color: #777777;
+	}
+	#topbar-right .nav .dropdown-toggle .caret:hover, 
+	#topbar-right .nav .dropdown-toggle .caret:focus {
+	  margin-top: 18px;
+	  border-top-color: #000000;
+	  border-bottom-color: #000000;
+	}
+
+	#topbar-right .nav > li > a:focus,
+	#topbar-right .nav > li > a:hover {
+	  color: #333333;
+	  text-decoration: none;
+	 
+	}
+
+	#topbar-right .nav > .active > a,
+	#topbar-right .nav > .active > a:hover,
+	#topbar-right .nav > .active > a:focus {
+	  color: #555555;
+	  text-decoration: none;
+	  background-color: #e5e5e5;
+	  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+	     -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+	          box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+	}
+
+/*style for main body*/
+	.mainbody {
+		margin-top: 60px;
+		width:		100%;
+		min-width: 	1080px;
+	}
+
+/*style for common use div, a unified style for each boxes*/
+	.boxes {
+		background-color:	#FFFFFF;
+		/*border:				1px solid #DFDFDF;*/
+		border-radius:		3px;
+		box-shadow:			1px 1px 3px #DFDFDF;
+		
+		margin-top:			5px;
+		margin-bottom:		10px;	
+	}
+	
+	.boxes i {
+		opacity: .6;
+	}
+	
+	.box-title {
+		height: 20px;
+		border: 1px solid #ddd;
+		margin-bottom: -1px;
+		padding-top:	6px;
+		padding-bottom:	6px;
+		padding-left:	10px;
+		padding-right:	10px;
+		background-color: #fafafa;
+		background-image: -moz-linear-gradient(top, #fafafa, #efefef);
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(#efefef));
+		background-image: -webkit-linear-gradient(top, #fafafa, #efefef);
+		background-image: -o-linear-gradient(top, #fafafa, #efefef);
+		background-image: linear-gradient(to bottom, #fafafa, #efefef);
+		filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fafafa', endColorstr='#efefef', GradientType=0);
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		-webkit-border-radius: 2px 2px 0px 0px;
+		-moz-border-radius: 2px 2px 0px 0px;
+		border-radius: 2px 2px 0px 0px;
+		overflow: hidden;
+	}
+	
+		.box-title-text {
+			font-size: 16px;
+			line-height: 16px;
+			float: left;
+			margin-top: 2px;
+			color: #000000;
+			font-weight: 500;
+			text-shadow: 0px 1px 0px #fff;
+		}
+		
+		.box-title .break {
+			border-left: 1px solid #fcfcfc;
+			border-right: 1px solid #ddd;
+			margin: -12px 5px -10px 4px;
+			padding: 12px 0px 10px 0px;
+		}
+		
+		
+		.box-title-btn {
+			float:			right;
+			margin-right:	0px;
+			margin-left:	1px;
+		}
+		
+		.box-title .control-btn {
+			margin-top:	5px;
+		}
+		
+	.box-content {
+		padding-top:	10px;
+		padding-left:	10px;
+		padding-right:	10px;
+		border:			1px solid #ddd;
+		background:		#FCFCFC;
+		margin-top: 	-1px;
+		border-radius: 0px 0px 2px 2px;
+	}
+	
+/**/
+.btn-primary {
+  background-color: #006dcc;
+  color: #ffffff;
+  background-image: -moz-linear-gradient(top, #67c2ef, #2FABE9);
+  background-image: -ms-linear-gradient(top, #67c2ef, #2FABE9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#67c2ef), to(#2FABE9));
+  background-image: -webkit-linear-gradient(top, #67c2ef, #2FABE9);
+  background-image: -o-linear-gradient(top, #67c2ef, #2FABE9);
+  background-image: linear-gradient(top, #67c2ef, #2FABE9);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#'67c2ef, endColorstr='#'2FABE9, GradientType=0);
+  border-color: #1598d9 #1598d9 #007bb8 #1598d9;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  background-color: #2FABE9;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #2FABE9 \9;
+}
+
+
+.bs-callout-info {
+	background-color: #f0f7fd;
+	border-color: #d0e3f0;
+}
+
+.bs-callout {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 10px 30px 10px 10px;
+	border-left: 5px solid #eee;
+}

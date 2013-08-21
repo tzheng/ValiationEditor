@@ -1,0 +1,344 @@
+/**
+ * 	This is stylesheet for EDC Main screen
+ * 
+ */
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#hide-btn {
+	margin-right:	30px;
+}
+
+/*Style for general information*/
+.blue-header {
+	color:			#5990de;
+	font-size: 		18px;
+	font-weight: 	300;
+}
+
+
+/*Style for General Information box*/
+.study-desc {
+	margin-top:		-10px;
+	margin-bottom:	10px;
+}
+
+.study-progress {
+	
+}
+	#screen_status {
+		margin-top: 10px;
+	}
+
+.bar-default {
+	 float:		 right; 
+	 text-align: center;
+}
+
+#general-info {
+	height: 220px;
+}
+
+/* Style for Reminder box*/
+#reminders {
+	height: 220px;
+}
+	#reminder-bottom {
+		margin-top:		10px;
+		line-height:	25px;
+	}
+	#reminder-list {
+		margin-top:	5px;
+		height: 	160px;
+		text-overflow: ellipsis;
+	}
+	#reminder-list input {
+		margin-top:	0px;
+	}
+	
+	#reminder-list a  {
+		margin-left:		10px;
+	}
+	#reminder-list .nav-tooltip {
+		opacity:	0.7;		
+	}
+	#reminder-list .nav-tooltip:hover {
+		opacity:	1;		
+	}
+	
+	#reminders ul {
+		margin-left:	0px;
+	}
+	#reminders ul li {
+		list-style:		none;
+		line-height: 	30px;
+		border-top:		1px solid #DDDDDD;
+	}
+	#reminders ul li a {
+		text-decoration:	none;
+	}
+	#reminders ul li:first-child {
+		border-top:		none;
+	}
+	#reminders ul li:last-child {
+		border-bottom:	1px solid #DDDDDD;
+	}
+	
+
+/*style for subject matrix*/
+
+/*
+ * 
+#subject-matrix {
+	margin-left:	0px;
+}
+*/
+	/*style for paginaton*/
+	.table-page .pagination {
+		margin-top:	0px;
+	}
+	
+	#display-choice {
+		margin-top: -5px;
+	}
+	
+	
+	.display-opt {
+		margin-top:	5px;
+	}
+	
+	/*style for filter box*/
+	#filter-box {
+		margin-left:	0px;
+		margin-bottom:	10px;
+		padding-top:	10px;
+		background: 	#efefef;
+	}
+		#filter-box hr {
+			margin-top: 	5px;
+			margin-bottom: 	5px;
+		}
+		
+		#filter-trigger {
+			margin-left:	10px;
+			margin-top:		-10px;
+		}
+
+		#filter-box ul {
+			margin-left:	5px;
+		}
+			#filter-box ul li {
+				list-style:		none;
+			}
+			
+			.input-age {
+				width: 35px;
+			}
+			
+			#hide-filter {
+				margin-right:	185px;
+			}
+			
+/* style for subject table*/
+	#subject-table-container {
+		width:	100%;
+		height: 100%;
+		margin-top: 	10px;
+		margin-bottom:	30px;
+	}
+	
+		#subject-table-container tr {
+			height: 40px;
+		}
+		#subject-table-container .table {
+			border-bottom: 1px solid #DDDDDD;
+		}
+		
+		#subject-table-container ul {
+			margin-left:	0px;
+		}
+		
+		#subject-table-container ul li {
+			list-style: 	none;
+			line-height:	30px;
+			height: 		35px;
+			text-align:		left;
+		}
+	
+		/**   Sytle for the left part of subject matrix **/
+		#subject-table-left {
+			float:		left;
+			width: 		270px;
+			border-right: 1px solid #DDDDDD;
+			margin-top:	20px;
+		}
+			.subject-info-row li {
+				float: 			left;
+				padding-right:	5px;
+				padding-left:	5px;
+			}
+			
+			.subject-id {
+				width: 90px;
+			}
+			.subject-gender {
+				width: 55px;
+			}
+			.subject-age {
+				width: 30px;
+			}
+			.subject-status {
+				width: 30px;
+			}
+			
+		
+		/**   Sytle for the middle part of subject matrix **/
+		#subject-table-middle {
+			float: 		left;
+			position: 	absolute;
+			right: 		172px;
+			left:		302px;
+			
+			margin-top: -15px;
+			
+			width: 		auto;
+			min-width:	610px;
+			overflow-x: scroll;
+		}
+					#subject-table-left .visit-row:nth-child(even), 
+					#subject-table-right .visit-row:nth-child(even) {
+						background-color: #EFEFEF;
+					}
+					
+					#subject-table-middle .visit-row:nth-child(odd) {
+						background-color: #EFEFEF;
+					}
+					
+					
+					.visit-column-title li {
+						float: 			left;
+			  			text-align: 	center;
+			  			padding-left:	5px;
+			  			padding-right:	5px;
+			  			min-width:		150px;
+			  			border-right: 	1px solid #DDDDDD;
+					}
+					
+			  		.visit-column li {
+			  			float: 			left;
+			  			text-align: 	center;
+			  			padding-left:	5px;
+			  			padding-right:	5px;
+			  			min-width:		150px;
+			  			/*border-right: 	1px solid #DDDDDD;*/
+			  		}
+
+					.tab-content-main {
+						margin-top: 35px;
+					}
+	/**   Sytle for the right part of subject matrix **/
+		#subject-table-right {
+			float: 		right;
+			width: 		140px;
+			text-align:	center;
+			margin-top:	20px;
+			border-left:	1px solid #DDDDDD;
+		}
+
+			.actions li {
+				padding-left:	6px;
+			}
+		
+	
+
+
+
+/** sytle for subject detail information page.   edcdetail.html**/
+	#subject-detail-info {
+		width:			500px;
+		margin-bottom:	10px;
+	}
+		#subject-detail-info .progress {
+			margin-bottom:	10px;
+		}
+		
+		#subject-detail-info tr:last-child {
+			border-bottom: 1px solid #DDDDDD;
+		}
+		
+		
+/* style for CRF Lists*/
+	.crf-forms {
+		margin-left:	0px;
+		margin-top:		0px;
+	}
+	.crf-li {
+		list-style: none;
+		float: 		left;
+		margin-right:	10px;
+		margin-bottom:	10px;
+		padding-bottom:	5px;
+		min-width:		120px;
+		height:	60px;
+		border: 1px solid #DDDDDD;
+		border-radius:	2px;
+	}
+		.crf-li .lead {
+			font-size:		16px;
+			font-weight:	500;
+			line-height:	16px;
+			margin:			5px;
+			height: 		16px;
+		}
+			.crf-li .lead .pull-right {
+				margin-left: 5px;
+			}
+		.crf-li .label {
+			margin-left:	5px;
+		}
+		.crf-li .time {
+			font-size:		12px;
+			margin-left:	5px;
+			margin-bottom:	0px;
+		}
+		
+
+	.detail-forms {
+		margin-top:		0px;
+		margin-bottom:	10px;
+		border-bottom:	1px solid #DDDDDD;
+	}	
+	
+/**style for form attribute **/
+
+	#form-attr {
+		margin-top:		30px;
+		border-radius:	2px;
+	}
+	
+		#attr-title {
+			border-bottom:	1px solid #DDDDDD;
+		}
+		
+		#attr-title h4 {
+			margin-left:	10px;
+		}
+
+	.list-view {
+		border-bottom: none;
+	}
+	
+	.form-listview tr:last-child td {
+		border-bottom: 1px solid #DDDDDD;
+	}
+
+	

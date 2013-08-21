@@ -1,0 +1,179 @@
+
+/* fixed editor at bottom of page*/
+#bottomNav { 
+	z-index:	9999; 
+	position:	fixed; 
+	bottom:		0; 
+	left:		0; 
+	width:		100%;
+	margin-bottom:	0px;
+	_position:	absolute; /* for IE6 */
+ 	_top: expression(documentElement.scrollTop + documentElement.clientHeight-this.offsetHeight); /* for IE6 */ 
+ 	overflow:	visible; 
+}
+
+#bottomNav .box-content {
+	height: 320px;
+}
+
+
+/* style for list of CRFs */ 
+#crf_list {
+	min-height:	550px;
+	overflow-y:	scroll;
+	padding:	0px;
+}
+	#crf_list ul {
+		margin-left:	0px;	
+	}
+	
+		#crf_list ul li {
+			padding-left:	10px;
+			list-style:		none;
+			line-height:	30px;
+			border-bottom: 	1px solid #DDDDDD;
+		}
+		
+		#crf_list ul li:hover {
+			cursor:			pointer;
+			background:		#F0F8FF;
+			font-weight:	bold;
+		}
+		.form-active {
+			background:		#F0F8FF;
+			font-weight:	bold;
+		}
+		
+/* style for variable for list*/
+#variable_list {
+	height: auto;
+}
+	#variable_list ul {
+		margin-top:		0px;
+		margin-left:	0px;
+	}
+		#variable_list ul li {
+			list-style: none;
+			padding-left: 	10px;
+			border-bottom:  1px solid #DDDDDD;
+			line-height: 	25px;
+		}
+		/**
+		#variable_list ul li:nth-child(odd) {
+			background-color:	#EFEFEF;
+		}
+		**/
+		#variable_list ul li:hover {
+			cursor: 	pointer;
+			background:		#F0F8FF;
+			font-weight: 	bold;
+		}
+		
+
+	#variable_list_left {
+		overflow-y: 		scroll;
+		border-radius:		2px;
+		height: 			250px;
+		border:		1px solid #DDDDDD;
+	}
+	
+	#variable_list .container-fluid {
+		padding-left: 	0px;
+		padding-right:	0px;
+	}
+
+	
+/* style for common use script*/
+#common_use {
+	height:		230px;
+	overflow-y:	auto;
+	padding-top:	0px;
+}
+
+	#sort_by {
+		margin-bottom: 	0px;
+	}
+	
+	#common_use .btn {
+		margin-left: 5px;
+	}
+/* style for sample data test*/
+#sample_test {
+	min-height: 	230px;
+	padding:		0px;
+}
+
+	#sample_test table {
+		margin-top:		-1px;
+		margin-bottom:	0px;
+	}
+		#sample_test table input {
+			margin-bottom:	0px;
+		}
+	#sample_test .chzn-select {
+		width:	120px;
+	}
+
+/*style for Script editor space */
+
+
+.script-edit-hide {
+	font-weight: 	bold;
+
+	background: #b5bdc8;
+background: -moz-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b5bdc8), color-stop(36%,#828c95), color-stop(100%,#28343b)); 
+background: -webkit-linear-gradient(top, #b5bdc8 0%,#828c95 36%,#28343b 100%);
+background: -o-linear-gradient(top, #b5bdc8 0%,#828c95 36%,#28343b 100%); 
+background: -ms-linear-gradient(top, #b5bdc8 0%,#828c95 36%,#28343b 100%);
+background: linear-gradient(to bottom, #b5bdc8 0%,#828c95 36%,#28343b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); 
+
+}
+
+.btn-primary {
+
+}
+
+#editor_space {
+	/*border-right:	1px solid #DDDDDD; */
+}
+
+	.editor-btn {
+		
+	}
+	
+	#code-area {
+		margin-top: 0px;
+	}
+	
+		#grammer_check {
+			margin-top:		5px;
+			margin-right:	10px;
+		}
+	#code {
+		border-right: 1px solid #DDDDDD;
+		overflow-y:	scroll;
+	}
+
+	.script-edit:hover {
+		cursor: pointer;
+	}
+	
+	#grammer-check-result {
+		height: 	290px;
+		border-radius:	5px;
+		border:		1px solid #DDDDDD;
+		overflow-y: auto;
+	}
+
+
+/*style for footer*/
+#validation-footer {
+	margin-bottom: 40px;
+}
+
+
+#test-result {
+	font-size:	20px;
+}

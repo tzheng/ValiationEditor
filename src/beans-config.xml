@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+ 
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+			destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://samsungcrf.cysxsqbfzgaw.us-west-2.rds.amazonaws.com:3306/Validation"/>
+		<property name="username" value="samsungUser" />
+		<property name="password" value="samsungPass" />
+	</bean>
+	
+	<bean id="commonUse" class="dao.CommonUseDAO">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="variableRule" class="dao.VariableRuleDAO">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="variable" class="dao.VariableDAO">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="crfs" class="dao.CRFDAO">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+</beans>
