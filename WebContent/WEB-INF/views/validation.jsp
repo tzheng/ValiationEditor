@@ -192,8 +192,8 @@
 															</tr>
 															<tr>
 																<td>Range</td>
-																<td><input class="input-mini" type="text" name="rangeFrom" placeholder="From" value="${variablerule.rangeFrom}"/> - 
-																	<input class="input-mini" type="text" name="rangeTo" placeholder="To" value="${variablerule.rangeTo}"/>
+																<td><input class="input-mini" type="text" id="rangeFrom" name="rangeFrom" placeholder="From" value="${variablerule.rangeFrom}"/> - 
+																	<input class="input-mini" type="text" id="rangeTo" name="rangeTo" placeholder="To" value="${variablerule.rangeTo}"/>
 																</td>
 																
 																<td>Unit</td>
@@ -449,7 +449,7 @@
 						</div>
 						
 						<div class="span4">
-							<strong>Grammar Check Result</strong>
+							<strong>Message</strong>
 							<div id="grammer-check-result">
 								<c:choose>
 									<c:when test="${hasnoerror == 1 }">

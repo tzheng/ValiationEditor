@@ -134,15 +134,17 @@
 	}
 	
 	function jumpTo(id) {
-		window.location = '/ValidationTool6/getform?formname=' + id;
+		window.location = '/getform?formname=' + id;
 	}
 	
 	function jumpToRule(id) {
-		window.location = '/ValidationTool6/getrule?variable=' + id;
+		window.location = '/getrule?variable=' + id;
 	}
 	
 	function fillVariable(name, question) {
 		document.getElementById("variableName").value = name;
 		document.getElementById("description").value = question;
-		console.log(name, question);
+		document.getElementById("ruleName").value = "";
+		document.getElementById("rangeFrom").value = "";
+		document.getElementById("rangeTo").value = "";
 	}

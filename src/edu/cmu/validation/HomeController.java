@@ -52,22 +52,26 @@ public class HomeController {
 		session.setAttribute("scriptlist", slist);
 		session.setAttribute("formlist", cList);
 		session.setAttribute("activeform", "AE");
+		List<Variable> vlist = crfdao.getFormVariables("AE");
+		session.setAttribute("variablelist", vlist);
 		model.addAttribute("displayoption", "display: none;");
 		return "validation";
 	}
-		//get commonly use script as Init
+		//get commonly use script
 		public List<CommonUseScript> initScripts() {
 			List<CommonUseScript> slist = new ArrayList<CommonUseScript>();
 			slist = commonly.findall();
 			return slist;
 		}
-		
+		//get list of CRFs
 		public List<CRF> initCRFs() {
 			List<CRF> cList = new ArrayList<CRF>();
 			cList = crfdao.findCRF();
 			return cList;
 		}
-	
+	/**
+	 * get variables of one CRF From
+	 */
 	@RequestMapping(value = "/getform", method = RequestMethod.GET) 
 	public String getFormVariable(Model model,
 			@RequestParam(value="formname") String formName,
@@ -84,6 +88,9 @@ public class HomeController {
 		return "validation";
 	}
 	
+	/**
+	 * get rule of one variable (if the variable is setted)
+	 */
 	@RequestMapping(value = "/getrule", method = RequestMethod.GET) 
 	public String getRule(Model model,
 			@RequestParam(value="variable") String variable,
@@ -95,7 +102,9 @@ public class HomeController {
 		return "validation";
 	}
 	
-	//grammar check and save script function
+	/**
+	 * grammar check and save script function
+	 */
 	@RequestMapping(value = "/grammarcheck", method = RequestMethod.POST) 
 	public String grammarCheck(Model model, 
 			@RequestParam(value="submittype", required = false) String type, 
@@ -208,7 +217,9 @@ public class HomeController {
 		return "validation";
 	}
 	
-	//sample test function
+	/**
+	 * Sample Test funciton.
+	 */
 	@RequestMapping(value = "/sampletest", method = RequestMethod.POST) 
 	public String sampleTest(Model model,
 			@RequestParam(value = "variablenum") int variableNum,
@@ -253,8 +264,6 @@ public class HomeController {
 	
 	/**
 	 * perform grammar check
-	 * @param code
-	 * @return
 	 */
 	public List<GrammarError> performGrammarCheck(String code, String formname) { 
 		List<GrammarError> errors = new ArrayList<GrammarError>();
